@@ -460,6 +460,10 @@ section { scroll-margin-top: 84px; }
    HERO
    ============================================================ */
 .hero { padding: 72px 0 24px; text-align: center; position: relative; }
+
+/* Hero clip hidden for now — remove this rule to re-enable */
+.hero .hero-media { display: none !important; }
+
 .hero-tags { display: flex; flex-wrap: wrap; gap: .65rem; justify-content: center; margin-bottom: 2rem; }
 .hero h1 { font-family: 'Sora', sans-serif; font-size: clamp(2.4rem, 6vw, 4.2rem); line-height: 1.04; letter-spacing: -.025em; max-width: 17ch; margin: 0 auto; }
 .gradient-text { background: var(--grad-brand); -webkit-background-clip: text; background-clip: text; color: transparent; }
@@ -1342,24 +1346,24 @@ var MEDIA_URLS = {
 <header class="site-header" id="header">
   <div class="container header-inner">
     <div class="brand-group">
-      <a class="brand" href="#top" aria-label="TabFlow home">
+      <a class="brand" href="https://superhivemarket.com/products/tabflow?ref=473" target="_blank" rel="noopener" aria-label="TabFlow home">
         <span class="brand-mark">
           <img src="https://mr3d.carrd.co/assets/images/image05.png?v=ac8f75d6" alt="TabFlow logo" />
         </span>
       </a>
     </div>
     <div class="header-version">
-      <a class="version-badge" href="#changelog" title="Open changelog">
+      <a class="version-badge" href="https://superhivemarket.com/products/tabflow?ref=473" target="_blank" rel="noopener" title="Open on Superhive">
         <span class="latest-tag">
           <span class="latest-dot"></span>
           <span>Latest</span>
         </span>
         <span class="vb-version">v1.0.0</span>
       </a>
-      <a class="vb-changelog" href="#changelog">Click for Changelog</a>
+      <a class="vb-changelog" href="https://superhivemarket.com/products/tabflow?ref=473" target="_blank" rel="noopener">Click for Changelog</a>
     </div>
     <div class="header-actions">
-      <a class="faq-btn" href="#pricing" title="FAQ">
+      <a class="faq-btn" href="https://superhivemarket.com/products/tabflow/faq?ref=473" target="_blank" rel="noopener" title="FAQ">
         FAQ <span class="must-read">Must Read</span>
       </a>
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle light / dark theme">
@@ -1459,12 +1463,12 @@ var MEDIA_URLS = {
     </p>
     <div class="hero-cta">
       <span class="btn-glow">
-        <a class="btn btn-primary" href="#pricing">
+        <a class="btn btn-primary" href="https://superhivemarket.com/products/tabflow?ref=473" target="_blank" rel="noopener">
           Get TabFlow
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
       </span>
-      <a class="btn btn-ghost" href="#pricing">Documentation</a>
+      <a class="btn btn-ghost" href="https://superhivemarket.com/products/tabflow/docs?ref=473" target="_blank" rel="noopener">Documentation</a>
     </div>
     <p class="hero-note">Switch Fast · Free Updates</p>
   </div>
@@ -1497,7 +1501,7 @@ var MEDIA_URLS = {
         <div style="text-align:center; padding:.8rem 1rem;">
           <h3 class="section-title" style="font-size:clamp(1.4rem,2.6vw,1.9rem);margin-top:0;">Why TabFlow</h3>
           <p style="max-width:760px;margin:.8rem auto 0;">
-            <span style="font-weight:bolder;"><a href="#pricing" style="color:var(--color-tertiary);">TabFlow</a></span>
+            <span style="font-weight:bolder;"><a href="https://superhivemarket.com/products/tabflow?ref=473" target="_blank" rel="noopener" style="color:var(--color-tertiary);">TabFlow</a></span>
             keeps your Blender workspace organised with a <b>Tabs System</b> (just like the one you have in
             your browser), one-click instant Editor Switch — so you spend your time creating, not
             Changing Editor Windows.
@@ -1521,9 +1525,7 @@ var MEDIA_URLS = {
       <div class="v30-hero" style="margin-bottom:0;">
         <h3 class="section-title" style="font-size:clamp(1.4rem,2.6vw,1.9rem);margin-top:0;">Why Use TabFlow?</h3>
         <p style="max-width:760px;margin:.8rem auto 0;">
-          Below you can see two workspaces: one on the left is cluttered with every add-on tab enabled.
-          The other is focused, grouped, and ready for the task. TabFlow keeps only what you need in
-          reach — and brings everything back the moment you need it.
+          Below you can see two workspaces: one on the left is WITHOUT TABFLOW The other on the right is with TABFLOW And Tabs only show when you (Hold Ctrl) Key on your keyboard allowing your to switch editors effortlessly, Plus these are saved along with the Blend File, and ready for you to Use later. TabFlow keeps only what you need in reach — and brings everything back the moment you need it.
         </p>
       </div>
       <div class="compare" id="goboCompare" style="margin:1rem 0 0;">
@@ -1551,164 +1553,15 @@ var MEDIA_URLS = {
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
-<!-- ============================================================ -->
-<!-- 7. RENDER VIEWPORT PLAYBACK -->
-<!-- ============================================================ -->
-<!-- 8. GOBOS MASTER 3.0 -->
-<!-- ============================================================ -->
-<section class="section" id="v30">
-  <span class="seam-label">Version 1.0</span>
-  <span class="seam-label">Version 1.0</span>
-  <canvas class="section-particles" data-pattern="grid" aria-hidden="true"></canvas>
-  <div class="container">
-
-    <div class="quickfog-outer reveal">
-      <div class="v30-hero" style="margin-bottom:0;">
-        <h3 class="v30-kicker">Smart Tab Manager</h3>
-        <h2>TabFlow 1.0 is Here!</h2>
-        <p>Version 1.0 lets you group your N-panel tabs, save full workspace layouts and switch between
-        them instantly — so every task gets exactly the panels it needs.</p>
-      </div>
-      <div class="img-frame">
-        <video autoplay muted loop playsinline src="https://mr3d.carrd.co/assets/videos/video06.mp4?v=bd045c84" aria-label="TabFlow 1.0"></video>
-      </div>
-      <div class="img-frame">
-        <video autoplay muted loop playsinline src="https://mr3d.carrd.co/assets/videos/video06.mp4?v=2362fb2f" aria-label="TabFlow 1.0"></video>
-      </div>
-    </div>
-    <div class="quickfog-outer reveal">
-      <div class="feature-card fc-center">
-        <div class="fc-body">
-          <h3>Tab Grouping</h3>
-          <p>Collapse the tabs you rarely use into clean groups, and keep the ones you need front and centre — with full control over order and visibility.</p>
-          <p class="slb-label"><b>Simple Grouping</b></p>
-        </div>
-      </div>
-      <div class="img-frame">
-        <video autoplay muted loop playsinline src="https://mr3d.carrd.co/assets/videos/video07.mp4?v=710c4809" aria-label="TabFlow 1.0"></video>
-      </div>
-      <div style="text-align:center; padding: 1.2rem 1rem 0;">
-        <p class="slb-label"><b>Advanced Grouping</b></p>
-      </div>
-      <div class="img-frame">
-        <video autoplay muted loop playsinline src="https://mr3d.carrd.co/assets/videos/video09.mp4?v=a8c71166" aria-label="Advanced tab grouping"></video>
-      </div>
-    </div>
-
-    <div class="quickfog-outer reveal">
-      <div class="feature-card fc-center">
-        <div class="fc-body">
-          <h3>One-Click Layouts</h3>
-          <p>Save any workspace as a preset and recall it instantly — modelling, texturing, lighting or rendering, each with its own tab setup. An advanced layout sync is coming in the next update.</p>
-        </div>
-      </div>
-      <div class="img-frame">
-        <video autoplay muted loop playsinline src="https://mr3d.carrd.co/assets/videos/video01.mp4?v=7e4e3dce" aria-label="One-click layouts"></video>
-      </div>
-    </div>
-
-    <div class="quickfog-outer reveal">
-      <div style="text-align:center; padding: .4rem 1rem 0;">
-        <p class="slb-label" style="margin-top:.25rem;"><b>Layout Presets and Quick-Switch Combined</b></p>
-      </div>
-      <div class="img-frame">
-        <video autoplay muted loop playsinline src="https://mr3d.carrd.co/assets/videos/video01.mp4?v=2362fb2f" aria-label="Layout presets + quick switch"></video>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================ -->
-<!-- 10. HOW TO APPLY -->
-<!-- ============================================================ -->
-<section class="section" id="features">
-  <span class="seam-label">Features</span>
-  <span class="seam-label">Features</span>
-  <canvas class="section-particles" data-pattern="drift" aria-hidden="true"></canvas>
-  <div class="container">
-    <div class="quickfog-outer reveal">
-      <div class="feature-card fc-center">
-        <div class="fc-body" style="padding:.8rem 1.2rem;">
-          <p>Simply open the TabFlow panel, pick a group, and choose which tabs belong to it
-          <b>(Select, Group, Apply)</b>.</p>
-          <p>
-            Press <b>Save Layout</b> to store the current arrangement, or <b>Load Layout</b> to jump back
-            to a saved one. And there you have it!
-          </p>
-        </div>
+      <div class="img-frame" style="margin:.55rem 0 0;">
+        <video autoplay muted loop playsinline src="https://mr3d.carrd.co/assets/videos/video27.mp4?v=c88b4758" aria-label="TabFlow clip"></video>
       </div>
       <div class="img-frame" style="margin:.55rem 0 0;">
-        <video autoplay muted loop playsinline src="https://mr3d.carrd.co/assets/videos/video01.mp4?v=6f7c09d1" aria-label="Applying a gobo"></video>
-      </div>
-      <div class="img-frame" style="margin-top:.55rem;">
-        <video autoplay muted loop playsinline src="https://mr3d.carrd.co/assets/videos/video01.mp4?v=44f01ffb" aria-label="Applying a gobo"></video>
-      </div>
-    </div>
-
-    <div class="feature-grid" style="grid-template-columns:1fr; margin-top:0; gap:0;">
-      <div class="quickfog-outer reveal">
-        <div class="feature-card fc-center">
-          <div class="fc-body" style="padding:.8rem 1.2rem;"><h3>Simple Tab Grouping</h3><p>Select the tabs you want together, give the group a name, and TabFlow keeps them tidy in the sidebar.</p></div>
-        </div>
-        <div class="img-pair" style="margin:.55rem 0 0; gap:.55rem;">
-          <div class="img-frame"><video autoplay muted loop playsinline src="https://mr3d.carrd.co/assets/videos/video19.mp4?v=aacc3338" aria-label="Tab grouping"></video></div>
-          <div class="img-frame"><video autoplay muted loop playsinline src="https://mr3d.carrd.co/assets/videos/video18.mp4?v=aacc3338" aria-label="Tab grouping"></video></div>
-        </div>
-      </div>
-      <div class="quickfog-outer reveal">
-        <div class="feature-card fc-center">
-          <div class="fc-body" style="padding:.8rem 1.2rem;"><h3>Layout Controls</h3><p>Rename, reorder and delete layouts — and set which one loads at startup.</p></div>
-        </div>
-        <div class="img-frame" style="margin:.55rem 0 0;">
-          <video autoplay muted loop playsinline src="https://mr3d.carrd.co/assets/videos/video21.mp4?v=aacc3338" aria-label="Layout controls"></video>
-        </div>
-        <div class="img-frame" style="margin-top:.55rem;">
-          <video autoplay muted loop playsinline src="https://mr3d.carrd.co/assets/videos/video20.mp4?v=aacc3338" aria-label="Layout controls"></video>
-        </div>
-      </div>
-      <div class="quickfog-outer reveal">
-        <div class="feature-card fc-center">
-          <div class="fc-body" style="padding:.8rem 1.2rem;"><h3>Panel Options</h3><p>Depending on the layout, extra options appear right in the add-on panel.</p></div>
-        </div>
-        <div class="img-frame" style="margin:.55rem 0 0;">
-          <video autoplay muted loop playsinline src="https://mr3d.carrd.co/assets/videos/video22.mp4?v=aacc3338" aria-label="Panel options"></video>
-        </div>
-      </div>
-      <div class="quickfog-outer reveal">
-        <div class="feature-card fc-center">
-          <div class="fc-body" style="padding:.8rem 1.2rem;"><h3>Workspace Profiles</h3><p>Switch between saved workspace profiles in one click.</p></div>
-        </div>
-        <div class="img-frame" style="margin:.55rem 0 0;">
-          <video autoplay muted loop playsinline src="https://mr3d.carrd.co/assets/videos/video23.mp4?v=aacc3338" aria-label="Workspace profiles"></video>
-        </div>
-      </div>
-    </div>
-
-    <div class="quickfog-outer reveal">
-      <div class="img-frame" style="margin:0;">
-        <video autoplay muted loop playsinline src="https://mr3d.carrd.co/assets/videos/video01.mp4?v=aacc3338" aria-label="TabFlow panel"></video>
-      </div>
-    </div>
-
-    <div class="quickfog-outer reveal">
-      <div style="text-align:center; padding:.8rem 1rem 0;">
-        <p class="slb-label" style="font-size:1.1rem; margin-top:.25rem;"><b>Switch Between Workspace Profiles Easily</b></p>
+        <video autoplay muted loop playsinline src="https://mr3d.carrd.co/assets/videos/video28.mp4?v=c88b4758" aria-label="TabFlow clip"></video>
       </div>
       <div class="img-frame" style="margin:.55rem 0 0;">
-        <video autoplay muted loop playsinline src="https://mr3d.carrd.co/assets/videos/video23.mp4?v=aacc3338" aria-label="Workspace profiles"></video>
-      </div>
-    </div>
-
-    <div class="quickfog-outer reveal">
-      <div style="text-align:center; padding:.8rem 1rem 0;">
-        <p class="slb-label" style="font-size:1.1rem; margin-top:.25rem;"><b>Icon Size and Panel Popup Size</b></p>
-      </div>
-      <div class="img-frame" style="margin:.55rem 0 0;">
-        <video autoplay muted loop playsinline src="https://mr3d.carrd.co/assets/videos/video24.mp4?v=aacc3338" aria-label="Panel size"></video>
+        <video autoplay muted loop playsinline src="https://mr3d.carrd.co/assets/videos/video25.mp4?v=c88b4758" aria-label="TabFlow clip"></video>
       </div>
     </div>
   </div>
